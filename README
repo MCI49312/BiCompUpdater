@@ -5,7 +5,7 @@
 ## Features
 - Minimalist user interface.
 - Automatic latest release retrieval via GitHub REST API.
-- Seamless APK installation via Android's PackageInstaller.
+- Seamless APK installation via Android PackageInstaller.
 - Lightweight and debloated for system-level integration.
 
 ## Technology Stack
