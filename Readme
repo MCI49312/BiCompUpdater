@@ -1,0 +1,23 @@
+# BiCompUpdater
+
+**BiCompUpdater** is a utility application designed for BiCompOS, a custom operating system based on LineageOS. This tool manages the installation and updates of essential bicycle computer applications, specifically Speedometer and FoxBike, directly from their GitHub repositories.
+
+## Features
+- Minimalist user interface.
+- Automatic latest release retrieval via GitHub REST API.
+- Seamless APK installation via Android's PackageInstaller.
+- Lightweight and debloated for system-level integration.
+
+## Technology Stack
+- Kotlin
+- Android SDK (minSdk 33, targetSdk 37)
+- GitHub REST API v3
+
+## How it Works
+1. Upon launching, the app connects to the specified GitHub repositories.
+2. It fetches the latest release assets (APKs).
+3. Using the `DownloadManager`, it saves the files to the device.
+4. It triggers the system `ACTION_VIEW` intent to finalize the installation.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
